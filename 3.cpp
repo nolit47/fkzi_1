@@ -1,10 +1,11 @@
+// calculator.cpp
 #include <iostream>
 
 int main() {
     double a, b;
     char op;
 
-    std::cout << "enter expression: ";
+    std::cout << "enter expression ";
     std::cin >> a >> op >> b;
 
     double result = 0;
@@ -15,6 +16,10 @@ int main() {
         case '/':
             if (b != 0) result = a / b;
             else { std::cout << "cannot divide by zero!" << std::endl; return 1; }
+            break;
+        case '%':
+            if (static_cast<int>(b) != 0) result = static_cast<int>(a) % static_cast<int>(b);
+            else { std::cout << "cannot mod by zero!" << std::endl; return 1; }
             break;
         default:
             std::cout << "unknown operator" << std::endl;

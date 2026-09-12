@@ -11,5 +11,11 @@ bool isPrime(int n) {
 int main() {
     int num = 29;
     std::cout << num << (isPrime(num) ? " is prime" : " is not prime") << std::endl;
+
+    std::cout << "Primes up to 50: ";
+    for (int i = 2; i <= 50; i++) {
+        if (isPrime(i)) std::cout << i << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
