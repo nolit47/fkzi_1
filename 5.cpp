@@ -18,6 +18,11 @@ public:
     bool isSquare() const {
         return width == height;
     }
+
+    void scale(double factor) {
+        width *= factor;
+        height *= factor;
+    }
 };
 
 int main() {
@@ -25,5 +30,8 @@ int main() {
     std::cout << "Area: " << rect.area() << std::endl;
     std::cout << "Perimeter: " << rect.perimeter() << std::endl;
     std::cout << "Is square? " << (rect.isSquare() ? "Yes" : "No") << std::endl;
+
+    rect.scale(2.0);
+    std::cout << "After scaling by 2x, area: " << rect.area() << std::endl;
     return 0;
 }

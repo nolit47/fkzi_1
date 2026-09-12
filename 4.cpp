@@ -13,9 +13,14 @@ int main() {
     std::cout << num << (isPrime(num) ? " is prime" : " is not prime") << std::endl;
 
     std::cout << "Primes up to 50: ";
+    int count = 0;
     for (int i = 2; i <= 50; i++) {
-        if (isPrime(i)) std::cout << i << " ";
+        if (isPrime(i)) {
+            std::cout << i << " ";
+            count++;
+        }
     }
     std::cout << std::endl;
+    std::cout << "Total primes found: " << count << std::endl;
     return 0;
 }
