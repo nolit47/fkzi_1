@@ -23,6 +23,10 @@ public:
         width *= factor;
         height *= factor;
     }
+
+    void printDimensions() const {
+        std::cout << "Width: " << width << ", Height: " << height << std::endl;
+    }
 };
 
 int main() {
@@ -33,5 +37,6 @@ int main() {
 
     rect.scale(2.0);
     std::cout << "After scaling by 2x, area: " << rect.area() << std::endl;
+    rect.printDimensions();
     return 0;
 }

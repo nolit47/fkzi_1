@@ -27,5 +27,6 @@ int main() {
 
     std::cout << "Result: " << result << std::endl;
     std::cout << "Operands were: " << a << " and " << b << std::endl;
+    std::cout << "Operator used: " << op << std::endl;
     return 0;
 }

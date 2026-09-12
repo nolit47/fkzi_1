@@ -15,5 +15,6 @@ int main() {
     std::cout << std::endl;
     std::cout << "Sum of first " << n << " terms: " << sum << std::endl;
     std::cout << "Last term (index " << n - 1 << "): " << a << std::endl;
+    std::cout << "Average of terms: " << (double)sum / n << std::endl;
     return 0;
 }
